@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.6)  13 SEP 2021 23:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.6)  13 SEP 2021 23:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -972,98 +972,97 @@ Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 76.
 <../Figures/problem_2.pdf, id=51, 462.52798pt x 346.89601pt>
 File: ../Figures/problem_2.pdf Graphic file (type pdf)
 <use ../Figures/problem_2.pdf>
-Package pdftex.def Info: ../Figures/problem_2.pdf  used on input line 106.
+Package pdftex.def Info: ../Figures/problem_2.pdf  used on input line 108.
 (pdftex.def)             Requested size: 346.89513pt x 260.17136pt.
  [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2pdfTeX war
 ning (ext4): destination with the same identifier (name{figure.1}) has been alr
 eady used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.143 \[-v_{n-1} + 2v_n = g_n\]
-                                <../Figures/problem_2.pdf>]
+l.140 \[2v_1- v_2 = g_1\]
+                          <../Figures/problem_2.pdf>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 170.
+put line 173.
 <../Figures/problem7.pdf, id=95, 1156.32pt x 578.16pt>
 File: ../Figures/problem7.pdf Graphic file (type pdf)
 <use ../Figures/problem7.pdf>
-Package pdftex.def Info: ../Figures/problem7.pdf  used on input line 196.
+Package pdftex.def Info: ../Figures/problem7.pdf  used on input line 200.
 (pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
 
-Overfull \hbox (68.15858pt too wide) in paragraph at lines 196--197
+Overfull \hbox (68.15858pt too wide) in paragraph at lines 200--201
  [][] 
  []
 
-<../Figures/problem8_abs_error.pdf, id=96, 1156.32pt x 578.16pt>
-File: ../Figures/problem8_abs_error.pdf Graphic file (type pdf)
-<use ../Figures/problem8_abs_error.pdf>
-Package pdftex.def Info: ../Figures/problem8_abs_error.pdf  used on input line 
-204.
-(pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
-
-Overfull \hbox (68.15858pt too wide) in paragraph at lines 204--205
- [][] 
- []
-
-<../Figures/problem8_rel_error.pdf, id=97, 1156.32pt x 578.16pt>
-File: ../Figures/problem8_rel_error.pdf Graphic file (type pdf)
-<use ../Figures/problem8_rel_error.pdf>
-Package pdftex.def Info: ../Figures/problem8_rel_error.pdf  used on input line 
-209.
-(pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
-
-Overfull \hbox (68.15858pt too wide) in paragraph at lines 209--210
- [][] 
- []
-
-<../Figures/problem8_table.pdf, id=98, 250.43562pt x 188.20313pt>
-File: ../Figures/problem8_table.pdf Graphic file (type pdf)
-<use ../Figures/problem8_table.pdf>
-Package pdftex.def Info: ../Figures/problem8_table.pdf  used on input line 214.
-
-(pdftex.def)             Requested size: 250.435pt x 188.20265pt.
 [3] [4pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.244 \end{algorithm}
-                     pdfTeX warning (ext4): destination with the same identifie
-r (name{figure.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.244 \end{algorithm}
-                      <../Figures/problem7.pdf> <../Figures/problem8_abs_error.
-pdf
-
-pdfTeX warning: pdflatex.exe (file ../Figures/problem8_abs_error.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
->] [5pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.245 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.245 
-       <../Figures/problem8_rel_error.pdf> <../Figures/problem8_table.pdf>]
-<../Figures/problem10.pdf, id=214, 1156.32pt x 578.16pt>
-File: ../Figures/problem10.pdf Graphic file (type pdf)
-<use ../Figures/problem10.pdf>
-Package pdftex.def Info: ../Figures/problem10.pdf  used on input line 250.
+l.204 \section
+              {Problem 8} <../Figures/problem7.pdf>]
+<../Figures/problem8_abs_error.pdf, id=135, 1156.32pt x 578.16pt>
+File: ../Figures/problem8_abs_error.pdf Graphic file (type pdf)
+<use ../Figures/problem8_abs_error.pdf>
+Package pdftex.def Info: ../Figures/problem8_abs_error.pdf  used on input line 
+208.
 (pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
 
-Overfull \hbox (68.15858pt too wide) in paragraph at lines 250--251
+Overfull \hbox (68.15858pt too wide) in paragraph at lines 208--209
+ [][] 
+ []
+
+<../Figures/problem8_rel_error.pdf, id=136, 1156.32pt x 578.16pt>
+File: ../Figures/problem8_rel_error.pdf Graphic file (type pdf)
+<use ../Figures/problem8_rel_error.pdf>
+Package pdftex.def Info: ../Figures/problem8_rel_error.pdf  used on input line 
+213.
+(pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
+
+Overfull \hbox (68.15858pt too wide) in paragraph at lines 213--214
+ [][] 
+ []
+
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.216 I
+       n the table below I have extracted max values for the relative error ...
+ <../Figures/problem8_abs_error.pdf>]
+<../Figures/problem8_table.pdf, id=178, 250.43562pt x 188.20313pt>
+File: ../Figures/problem8_table.pdf Graphic file (type pdf)
+<use ../Figures/problem8_table.pdf>
+Package pdftex.def Info: ../Figures/problem8_table.pdf  used on input line 220.
+
+(pdftex.def)             Requested size: 250.435pt x 188.20265pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.250 \end{algorithm}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.250 \end{algorithm}
+                      <../Figures/problem8_rel_error.pdf> <../Figures/problem8_
+table.pdf>]
+<../Figures/problem10.pdf, id=219, 1156.32pt x 578.16pt>
+File: ../Figures/problem10.pdf Graphic file (type pdf)
+<use ../Figures/problem10.pdf>
+Package pdftex.def Info: ../Figures/problem10.pdf  used on input line 260.
+(pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
+
+Overfull \hbox (68.15858pt too wide) in paragraph at lines 260--261
  [][] 
  []
 
 No file project_1.bbl.
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.254 \end{document}
-                     <../Figures/problem10.pdf>] (./project_1.aux)
+l.267 \end{document}
+                     <../Figures/problem10.pdf>] [8] (./project_1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1073,14 +1072,14 @@ Package rerunfilecheck Warning: File `project_1.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `project_1.out':
-(rerunfilecheck)             Before: 71E11BFA152F0B5150269CB4FA81BD39;1187
-(rerunfilecheck)             After:  57A0702F929A69981653E45FE5AA88B6;1177.
+(rerunfilecheck)             Before: 57A0702F929A69981653E45FE5AA88B6;1177
+(rerunfilecheck)             After:  AEA51E259C2C0DD5A6A69DC3E70AB603;1286.
  ) 
 Here is how much of TeX's memory you used:
- 28611 strings out of 478599
- 524340 string characters out of 5858102
- 858848 words of memory out of 5000000
- 45944 multiletter control sequences out of 15000+600000
+ 28615 strings out of 478599
+ 524375 string characters out of 5858102
+ 854848 words of memory out of 5000000
+ 45945 multiletter control sequences out of 15000+600000
  411074 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,9n,83p,1177b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1102,10 +1101,10 @@ cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on project_1.pdf (6 pages, 289865 bytes).
+Output written on project_1.pdf (8 pages, 295520 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

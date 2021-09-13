@@ -83,7 +83,7 @@
 
 \maketitle 
     
-\textit{List a link to your github repository here!}
+\textit{Github repo: $https://github.com/daglyd/Computational_Physics$}
     
 \section*{Problem 1}
 
@@ -100,8 +100,10 @@ Solving for constants using boundary conditions $u(0)=u(1)=0$
 \[-u(1)=0=e^{-10}+C_1(-10)-1 \rightarrow C_1=\frac{1}{10}(e^{-10}-1)\]
 \[-u(x) = e^{-10x}+\frac{1}{10}(e^{-10}-1)(-10x)-1\]
 \[u(x)=1-(1-e^{-10})x - e^{-10x}\]
+
+
 \section*{Problem 2}
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.75]{../Figures/problem_2.pdf}
 	\caption{Exact solution of u(x) over 1000 steps of x.}
@@ -122,16 +124,16 @@ where h is the step size defined as $ h = \frac{x_n-x_0}{n}$
 The discrete version of $-\frac{d^2u}{dx^2}= f(x)$ now becomes \
 
 \[ -\frac{d^2u}{dx^2} \vert_{x_i}= \frac{u_{i+1} + u_{i-1} - 2u_i}{h^2} + O(h^2) \]
-
+This is the discrete version of the double derivative as derived in the lectures,
 and the approximation can be written as 
 \[v''_i = \frac{-v_{i+1}-v_{i-1}+2v_i}{h^2} = f_i\]
 
 
 \section{Problem 4}
 
-The approximte discrete version of the Poisson equation from problem 3 can be rewritten as \[-v_{i+1}-v_{i-1}+2v_i = f_i h\]
+The approximte discrete version of the Poisson equation from problem 3 can be rewritten as \[-v_{i+1}-v_{i-1}+2v_i = f_i h^2\]
 
-Here we have n numbers of unknown variables $v_i$ for $i=(0,1,...,n)$ making up the the vector $\vec{v}=(v_0,v_1,...,v_n)$. We also have n numbers of known functions $g_i = f_i h^2$ making up the vector $\vec{g}=(f_0,f_1,...,f_n)$. 
+Here we have n numbers of unknown variables $v_i$ for $i=(0,1,...,n)$ making up the the vector $\vec{v}=(v_0,v_1,...,v_n)$. We also have n numbers of known functions $g_i = f_i h^2$ making up the vector $\vec{g}=(f_0h^2,f_1h^2,...,f_nh^2)$. 
 
 The termns of $v'' h^2 = v_{i-1}-2v_i+v_{i+1}$ makes up  n sets of equations. 
 
@@ -142,7 +144,7 @@ The termns of $v'' h^2 = v_{i-1}-2v_i+v_{i+1}$ makes up  n sets of equations.
   \[.  .  . \]
 \[-v_{n-1} + 2v_n = g_n\]
 
-The terms of $-v_0 and -v_n+1$ are zero because of the boundary conditions. The first and last equations therefore contains only two terms. 
+The terms of $-v_0 and -v_{n+1}$ are zero because of the boundary conditions. The first and last equations therefore contains only two terms. 
 
 This set of equations can then be written as the matrix equation $\vb{A}\vec{v} = \vec{g}$. \\
 Where $\vb{A}$ is:
@@ -163,7 +165,8 @@ and $\vec{v}$ and $ \vec{g}$ is:
 
 
 \section{Problem 5}
-
+Was a bit confused about this one, and have not got the time to look at it closely. \\ 
+Maybe the boundary conditions are not included in the solutions $\vec{v}$ but are in $\vec{v}^*$? 
 \section{Problem 6}
 Solving a general tridiagonal matrix can be done by two general steps. First forward substitution then backward substitution on the subdiagonal $a_i$, main diagonal $b_i$ and superdiagonal $c_i$.  
 \begin{algorithm}[H]
@@ -191,33 +194,36 @@ The total FLOPs for the algorithm then becomes $9(n-1) + 1$
 
 
 \section{Problem 7}
-\begin{figure}
+The numerical solutions where $n=10$ seems to be really bad. As n increases the plot show a closer alignment to the exact solution. And at $n=1000$ it seems to be very close by eye. 
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{../Figures/problem7.pdf}
 	\caption{Numerical solution using the general algorithm with varying values of n vs the exact solution u(x)}
 \end{figure}
-
+\newpage
 \section{Problem 8}
-
-\begin{figure}
+The numerical solutions seems to improve as n increases, and at a even rate. 
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{../Figures/problem8_abs_error.pdf}
-	\caption{Numerical solution using the general algorithm with varying values of n vs the exact solution u(x)}
+	\caption{The $log_{10}$ of the absolute error for differing values of n.}
 \end{figure}
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{../Figures/problem8_rel_error.pdf}
-	\caption{Numerical solution using the general algorithm with varying values of n vs the exact solution u(x)}
+	\caption{The $log_{10}$ of the relative error for differing values of n.}
 \end{figure}
-\begin{figure}
+In the table below I have extracted max values for the relative error for different values of n. At x=0 errors became infinite, while blowing up at x=1. I have therefore included columns where inf have been excluded as well as x=1. 
+The relative error seems to be approaching 1, indicating a more accurate numerical solutions as n increases. 
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=1]{../Figures/problem8_table.pdf}
-	\caption{Numerical solution using the general algorithm with varying values of n vs the exact solution u(x)}
+	\caption{The max relative error for differing values of n. }
 \end{figure}
 
 
 
-\section[h]{Problem 9}
+\section{Problem 9}
 
 For the special case where the matrix $\vb{A}$ as a signature of (-1,2,-1), the diagonal vectors have constant values the general algorithm will be modified to possible reduce the number of FLOPs.
  
@@ -245,10 +251,17 @@ This special algorithm reduces the number of FLOPs from $9(n-1)+1$ to $6(n-1)+1$
 
 
 \section{Problem 10}
-\begin{figure}
+Both the general and the special algorithm have been run 10 times and the mean time have then been calculated. \\
+The steps used have started at 10 and increased by a factor of 10 to $10^6$. \\
+As n increases the gain in time saved for the special algorithm are increasing, suggesting a faster algorithm than the general case. \\
+The seemingly linear increase in time for both the general and special algorithms is consistent with the linear nature of number of FLOPs for the method.  
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{../Figures/problem10.pdf}
 	\caption{Numerical solution using the general algorithm with varying values of n vs the exact solution u(x)}
 \end{figure}
+
+\section{Problem 11}
+Time is running out for me now, and I have not been able to do this problem. 
 
 \end{document}
