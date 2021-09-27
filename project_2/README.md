@@ -9,5 +9,5 @@ Python code for producing plots are cointained in the ./python folder.
 
 Build and run
 -------------
-On linux run the makefile with command: make all\n
+On linux run the makefile with command: make all\
 This will compile, link and run the c++ program, make the directories for Data and Figures, install python dependencies and run two jupyter notebooks from the commandline producing the figures for the report. 
