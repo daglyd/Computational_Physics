@@ -1,5 +1,6 @@
 #include "Particle.hpp"
 
+// Class for modeling a particle with its properties.
 Particle::Particle(double charge, double mass, vec position, vec velocity)
 {
   

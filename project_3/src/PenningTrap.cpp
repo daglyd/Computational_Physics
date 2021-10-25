@@ -1,11 +1,13 @@
 #include "PenningTrap.hpp"
 
+
+// Penning trap class
 PenningTrap::PenningTrap(double B0_in, double V0_in, double d_in)
-{
+{   
+    
     B0_ = B0_in;
     V0_ = V0_in;
     d_ = d_in;
-    // vector<Particle> particles;
 }
 
 void PenningTrap::add_particle(Particle p_in){
@@ -98,7 +100,6 @@ void PenningTrap::evolve_forward_Euler(double dt){
    int n = particles.size();
 
    for (int i=0; i < n; i++){
-    //    Particle p = particles.at(i);
 
         vec a = total_force(i)/particles.at(i).mass_;
         particles.at(i).velocity_ = particles.at(i).velocity_ + a*dt;
@@ -112,7 +113,6 @@ void PenningTrap::evolve_Euler_Cromer(double dt){
    int n = particles.size();
 
    for (int i=0; i < n; i++){
-    //    Particle p = particles.at(i);
 
         vec a = total_force(i)/particles.at(i).mass_;
         particles.at(i).velocity_ = particles.at(i).velocity_ + a*dt;
